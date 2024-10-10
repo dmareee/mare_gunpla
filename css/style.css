@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+    z-index: 1;
+}
+
+.main-head{
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 9999;
+}
+
+.main-head.slidedown{
+    position: fixed;
+    background: #fff;
+    animation: slidedown .3s forwards;
+}
+
+@keyframes slidedown{
+    from{
+        top: -250px;
+    }
+    to{
+        top: 0;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+
+.main-head .navbar{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-head .navbar .navbar-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-head .navbar-links .logo {
+    width: 100%;
+    padding: 5px 25px 5px 25px;
+    display: flex;
+    font-size: 32px;
+    color:rgb(236, 214, 10);
+    align-items: flex-start;
+}
+
+.main-head  .navbar .navbar-links .navbar-links-item {
+    list-style: none;
+    padding: 15px 30px;
+}
+
+.main-head .navbar .navbar-links .navbar-links-item .nav-items {
+    color:rgb(236, 214, 10);
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all .1s ease-in-out;
+}
+
+#dropdownMenuButton {
+    border-color: rgb(236, 214, 10);
+    background: transparent;
+    color: rgb(236, 214, 10);
+}
+
+.main-head .navbar .navbar-links .navbar-links-item .nav-items:hover {
+    color: bisque;
+    
+}
+
+.showcase {
+    width: 100%;
+    height: 560px;
+    background: url('https://m.media-amazon.com/images/M/MV5BYTVmYjIzMTEtY2M0MS00MmJmLTkxZjUtNGQxZWMzNWYyNjhhXkEyXkFqcGc@._V1_.jpg');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.showcase .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.showcase .content {
+    padding: 0 230px 0 230px;
+    color:rgb(255, 230, 0);
+}
+
+.showcase .content h2 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 55px;
+    color:rgb(255, 230, 0);
+}
+
+.showcase .content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color:rgb(255, 230, 0);
+}
+
+.showcase .content .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid rgb(238, 164, 4);
+    color:rgb(255, 230, 0);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
