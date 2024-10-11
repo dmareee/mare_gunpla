@@ -149,7 +149,20 @@ html {
     align-items: center;
 }
 
+.showcase-carousel .container .overlay h2{
+    color: #FFD43B;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 25px;
+}
+
 .carousel-caption {
     display: flex;
     justify-content: center;
+}
+
+.catalogue {
+    color: rgb(255, 230, 0);
+    
 }
